@@ -47,6 +47,7 @@ function App() {
             return <Photo key={index} {...image} />;
           })}
         </div>
+        {loading && <h2 className="loading">Loading...</h2>}
       </section>
     </main>
   );
